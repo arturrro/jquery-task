@@ -15,12 +15,32 @@
     <div class="test">Div 1</div>
     <div class="test">Div 2</div>
 
+    <div class="test2">Test 1</div>
+    <div class="test2">Test 2</div>
+
+    <div id="aloszka"></div>
+
 <script src="jquery.js"></script>
 <script src="sizzle.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function(){
         var jq = $('.test')
-                .addClass("red");
+                .addClass("red")
+                .append("<p>VIP paragraph</p>")
+                .attr("name","value");
+
+        var content = $('#aloszka')
+                .html("<span>Whazupp!</span>")
+                .html();
+        console.log("Html content ::" + content);
+
+        var attrTest = $('.test').attr("name");
+        console.log("Attr value:: " + attrTest);
+
+        var cssTest = $('.test2')
+                .css("color","red")
+                .css('color');
+        console.log("Css test ::" + cssTest);
     }, false);
 </script>
 </body>

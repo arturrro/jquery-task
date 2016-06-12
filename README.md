@@ -1,0 +1,9 @@
+* <s>addClass</s>
+* <s>append</s>
+* <s>html</s>
+* <s>css</s>
+* children
+* data
+* on
+* one
+* each
